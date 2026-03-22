@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load model and vectorizer
 import joblib
-model = joblib.load("fake_news_model.joblib")
+model = joblib.load("fake_news_model.pkl")
 
 vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 

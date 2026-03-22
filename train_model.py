@@ -39,7 +39,7 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print("Classification Report:\n", classification_report(y_test, y_pred))
 
 # Save the model and vectorizer
-model = joblib.load("fake_news_model.joblib")
+model = joblib.load("fake_news_model.pkl")
 pickle.dump(vectorizer, open("vectorizer.pkl", "wb"))
 
 print("✅ Model and vectorizer saved successfully!")
