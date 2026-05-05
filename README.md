@@ -1,37 +1,68 @@
-📰**Fake News Detection using Machine Learning**
+# 📰 Fake News Detection using Machine Learning
 
-A machine learning–based web application that classifies news articles as FAKE or REAL using Natural Language Processing (NLP). The project includes model training, evaluation, and a user-friendly Streamlit interface for live predictions.
+A machine learning-based web application that classifies news articles as **FAKE** or **REAL** using Natural Language Processing (NLP). The project includes model training, evaluation, and a deployed Streamlit interface for real-time predictions.
 
+---
 
-🚀 **Features**
+## 📌 Problem Statement  
+The spread of fake news has significant social and political impact. This project aims to build a machine learning model that can automatically detect whether a news article is fake or real based on its textual content.
 
-Text classification using TF-IDF Vectorization
+---
 
-Machine Learning model trained on real-world news datasets
+## 🚀 Features  
+- Text classification using **TF-IDF vectorization**  
+- Machine learning model trained on real-world datasets  
+- Achieved **~98–99% accuracy** on test data  
+- Interactive **Streamlit web application** for live predictions  
+- End-to-end pipeline: preprocessing → training → deployment  
 
-High accuracy (~98–99%)
+---
 
-Interactive Streamlit Web App
+## 🛠 Tech Stack  
+- Python  
+- Scikit-learn  
+- Pandas, NumPy  
+- NLTK  
+- Streamlit  
+- Pickle  
 
-Clean, modular, and reproducible codebase
+---
 
+## 🧠 Machine Learning Workflow  
 
-🛠 **Tech Stack**
+### 1. Data Preprocessing  
+- Combined and cleaned datasets (Fake & Real news)  
+- Performed text preprocessing: tokenization, stop-word removal  
+- Converted text into numerical features using **TF-IDF vectorization**  
 
-Python
+### 2. Model Building  
+- Trained classification models such as Logistic Regression and Naive Bayes  
+- Selected best-performing model based on evaluation metrics  
 
-Scikit-learn
+### 3. Evaluation  
+- Metrics used: Accuracy, Precision, Recall, F1 Score  
+- Achieved high performance across both classes  
 
-Pandas, NumPy
+---
 
-NLTK
+## 📈 Model Performance  
+- Accuracy: **~98–99%**  
+- Precision & Recall: High for both FAKE and REAL classes  
 
-Streamlit
+### 📊 Key Insight  
+- Text-based features (word frequency and importance) are highly effective for fake news classification  
+- Model performs well due to clear linguistic differences between fake and real news articles  
 
-Pickle
+---
 
+## 🌐 Live Demo  
+- Run locally using Streamlit (instructions below)  
+[Live Demo](https://fake-news-detection-system1.streamlit.app/)
 
-📂 **Project Structure**
+---
+
+## 📂 Project Structure  
+
 
 FakeNewsDetection/
 │
@@ -59,6 +90,8 @@ FakeNewsDetection/
 └── venv/                   # Virtual environment (ignored)
 
 
+
+
 📊 **Model Performance**
 
 Accuracy: ~98–99%
@@ -68,11 +101,13 @@ Precision: High for both FAKE and TRUE classes
 Recall: High reliability across classes
 
 
+
 **Sample Output:**
 
 Accuracy: 0.98+
 FAKE  -> Precision: 0.99 | Recall: 0.98
 TRUE  -> Precision: 0.98 | Recall: 0.99
+
 
 
 ⚙️ **How to Run the Project**
@@ -105,6 +140,7 @@ Open browser at:
 http://localhost:8501
 
 
+
 🧪 **Dataset**
 
 Fake.csv – Fake news articles
@@ -122,6 +158,7 @@ Subject
 Date
 
 
+
 📌 **Use Cases**
 
 News verification platforms
@@ -131,6 +168,7 @@ Media credibility analysis
 NLP & ML learning projects
 
 Resume & academic projects
+
 
 
 📈 **Future Enhancements**
@@ -144,11 +182,13 @@ Cloud hosting (Streamlit Cloud / Render)
 User authentication & history tracking
 
 
+
 👩‍💻 **Author**
 
 Tejaswini Sajja
 Final Year – Artificial Intelligence & Data Science
 Passionate about ML, NLP & Full-Stack Development
+
 
 
 ⭐ **Acknowledgements**
